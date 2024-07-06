@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "CommonJS",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+    "typeRoots": ["src/@types"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/router.test.ts", "src/index.js"],
+  "exclude": ["node_modules/**", "coverage", "src/**/*.spec.ts"]
+}
