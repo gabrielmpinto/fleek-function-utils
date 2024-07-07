@@ -1,5 +1,5 @@
 import { wrapLogger as wrapLogger, LoggerOptions } from './logger';
-import { HttpRequest, HttpResponse } from 'fleek';
+import { HttpRequest, HttpResponse } from './types';
 
 export type WrapperOptions = {
   log?: LoggerOptions;

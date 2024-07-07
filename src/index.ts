@@ -1,3 +1,3 @@
 export { wrapper, WrapperOptions } from './wrapper';
 export { LogLevel, LoggerOptions } from './logger';
-export * as fleek from 'fleek';
+export { HttpRequestMethod, HttpRequest, HttpResponseHeaders, HttpResponse } from './types';
