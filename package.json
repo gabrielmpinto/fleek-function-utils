@@ -1,6 +1,6 @@
 {
   "name": "fleek-function-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Utilities and types for Fleek Functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
