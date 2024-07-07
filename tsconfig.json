@@ -6,9 +6,8 @@
     "target": "ESNext",
     "esModuleInterop": true,
     "declaration": true,
-    "strict": true,
-    "typeRoots": ["src/@types"]
+    "strict": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/router.test.ts", "src/index.js"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules/**", "coverage", "src/**/*.spec.ts"]
 }
