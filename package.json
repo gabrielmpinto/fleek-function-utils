@@ -1,5 +1,5 @@
 {
-  "name": "functions-utils",
+  "name": "fleek-function-utils",
   "version": "0.1.0",
   "description": "Utilities and types for Fleek Functions",
   "main": "dist/index.js",
