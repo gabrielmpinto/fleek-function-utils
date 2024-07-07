@@ -13,7 +13,7 @@
     "lint": "eslint 'src/**/*.{js,ts}'",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "prepare": "husky"
   },
   "lint-staged": {
