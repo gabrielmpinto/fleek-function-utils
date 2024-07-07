@@ -8,9 +8,9 @@ const format = (level: LogLevel, ...args: unknown[]) => {
   return {
     timestamp: new Date().toISOString(),
     level,
-    message: args
-  }
-}
+    message: args,
+  };
+};
 
 export const wrapLogger = (): { logs: unknown[] } => {
   const chunks: unknown[] = [];

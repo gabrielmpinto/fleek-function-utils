@@ -17,15 +17,16 @@ export const wrapper = async (
   try {
     const response = await fn(request);
 
-    return debug ? {
-      body: {
-        success: true,
-        result: response,
-        logs,
-      },
-    } : response;
+    return debug
+      ? {
+          body: {
+            success: true,
+            result: response,
+            logs,
+          },
+        }
+      : response;
   } catch (error: unknown) {
-
     let errorMsg;
     if (error instanceof Error && error.message) {
       errorMsg = {
@@ -38,12 +39,14 @@ export const wrapper = async (
       errorMsg = error;
     }
 
-    return debug ? {
-      body: {
-        success: false,
-        error: errorMsg,
-        logs,
-      },
-    } : error;
+    return debug
+      ? {
+          body: {
+            success: false,
+            error: errorMsg,
+            logs,
+          },
+        }
+      : error;
   }
 };
