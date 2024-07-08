@@ -20,26 +20,19 @@ pnpm install fleek-function-utils
 
 # Usage
 
-Here's a basic example of a Fleek edge function, demonstrating how to configure and use the proxy package.
+Here's a basic example of a Fleek edge function, demonstrating how to configure and use the utils package to wrap your function and add debugging capabilities to it.
 
-```typescript
-import { createProxy, FleekRequest, FleekResponse } from '@fleek-platform/proxy';
+```javascript
+import { wrapper } from 'fleek-function-utils';
 
-// Define your routing rules
-const proxy = createProxy({
-  routes: {
-    routes: {
-      '/api/': 'https://api.foo.com/',
-      '/external/': 'https://external-service.com/',
-    },
-    default: 'https://fallback-service.com/',
-  },
-});
-
-export async function main(req: FleekRequest): Promise<FleekResponse> {
-  return await proxy.proxyRequest(req);
-}
+export const main = async (params) =>
+  wrapper((params) => {
+    console.log('Hello, World!');
+    return params;
+  }, params);
 ```
+
+Whenever you call the function with a `debug` query parameter, that execution's logs will be returned to you in the response body.
 
 # Release Process
 

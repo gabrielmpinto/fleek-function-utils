@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",
-  "repository": "https://github.com/fleek-platform/functions-utils",
-  "homepage": "https://github.com/fleek-platform/functions-utils#readme",
+  "repository": "https://github.com/gabrielmpinto/fleek-function-utils",
+  "homepage": "https://github.com/gabrielmpinto/fleek-function-utils#readme",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
